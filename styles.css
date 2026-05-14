@@ -619,6 +619,67 @@ h3 {
   background: linear-gradient(90deg, #70d0c8 var(--value), rgba(255, 255, 255, 0.14) var(--value));
 }
 
+/* HOBBIES SECTION START: személyes blokk, egyben törölhető */
+.section-hobbies {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(237, 247, 243, 0.68)),
+    var(--paper);
+  border-top: 1px solid rgba(17, 20, 24, 0.08);
+}
+
+.hobby-card {
+  border: 1px solid rgba(17, 20, 24, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 32px rgba(17, 20, 24, 0.06);
+}
+
+.hobby-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(10, 127, 120, 0.1);
+  color: var(--teal-dark);
+  margin-bottom: 18px;
+}
+
+.hobby-icon svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.hobby-card h3 {
+  font-size: 1.05rem;
+}
+
+.hobby-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.hobby-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.hobby-card {
+  min-height: 210px;
+  padding: 20px;
+}
+
+.hobby-card.wide {
+  grid-column: span 2;
+}
+/* HOBBIES SECTION END */
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.8fr);
@@ -707,8 +768,13 @@ h3 {
   .hero-stats,
   .service-grid,
   .project-grid,
+  .hobby-card-grid,
   .skills-layout {
     grid-template-columns: 1fr;
+  }
+
+  .hobby-card.wide {
+    grid-column: auto;
   }
 
   .identity-visual {
