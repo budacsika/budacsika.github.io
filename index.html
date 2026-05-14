@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budácsik Attila | Oracle PL/SQL fejlesztő</title>
+    <meta
+      name="description"
+      content="Budácsik Attila online CV oldala: Oracle PL/SQL fejlesztés, adatbázis-séma támogatás, adatszolgáltatások, SQL és Data Science tanulási irány Python, Pandas és Matplotlib fókuszban."
+    >
+    <meta property="og:title" content="Budácsik Attila | Oracle PL/SQL fejlesztő">
+    <meta property="og:description" content="Online CV Oracle PL/SQL, SQL, adatbázis fejlesztés és Data Science irányultsággal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/attila-budacsik-avatar.jpg">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/attila-budacsik-avatar.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="data-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Budácsik Attila kezdőlap">
+        <span class="brand-mark">BA</span>
+        <span>Budácsik Attila</span>
+      </a>
+      <nav class="site-nav" aria-label="Fő navigáció">
+        <a href="#services">Kompetenciák</a>
+        <a href="#experience">Tapasztalat</a>
+        <a href="#projects">Projektek</a>
+        <a href="#contact">Kapcsolat</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Adatbázis-fejlesztő | PL/SQL | SQL</p>
+          <h1 id="hero-title">Budácsik Attila</h1>
+          <p class="role-line">Oracle PL/SQL fejlesztő üzleti adatbázis-rendszerekhez.</p>
+          <p class="hero-lead">
+            Oracle PL/SQL fejlesztőként adatbázis-sémák támogatásában, PL/SQL logikák fejlesztésében,
+            adatszolgáltatásokban és adatjavítási/tisztítási folyamatokban tudok segíteni. Nyitott vagyok új
+            adatbázis-fejlesztői lehetőségekre, miközben aktívan építem a Data Science irányt.
+          </p>
+
+          <div class="hero-actions" aria-label="Elsődleges műveletek">
+            <a class="button primary" href="mailto:budacsik@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              Kapcsolatfelvétel
+            </a>
+            <a class="button secondary" href="CV_adatbazis_fejleszto_20260512.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 3v5h5"></path>
+                <path d="M12 11v6"></path>
+                <path d="m9 14 3 3 3-3"></path>
+              </svg>
+              CV letöltése
+            </a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Szakmai kiemelések">
+            <div>
+              <dt>10+ év</dt>
+              <dd>Oracle adatbázis-réteg. OLTP adatbázisok tervezése, fejlesztése.</dd>
+            </div>
+            <div>
+              <dt>PL/SQL</dt>
+              <dd>SQL, package, trigger, scheduler, CTE, Analytic Functions, Window Functions, Bulk Collect / FORALL</dd>
+            </div>
+            <div>
+              <dt>Data Science</dt>
+              <dd>Python, Pandas, Matplotlib, PostgreSQL / CSV</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="identity-visual" aria-label="Profil összefoglaló">
+          <div class="portrait-wrap">
+            <img src="assets/attila-budacsik-avatar.jpg" alt="Budácsik Attila portréja">
+          </div>
+          <div class="terminal-panel" aria-label="Adatbázis fejlesztői összefoglaló">
+            <div class="terminal-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre><code>SELECT focus_area
+FROM career_profile
+WHERE owner = 'Budácsik Attila';
+
+ORACLE PL/SQL
+SCHEMA DESIGN
+DATA SERVICES
+PYTHON DATA SCIENCE</code></pre>
+          </div>
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span>Nyitott új Oracle PL/SQL és adatbázis-fejlesztői lehetőségekre</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="trust-strip" aria-label="Technológiai fókusz">
+        <span>Oracle Database 10g, 11g</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB 2.x, 3.x</span>
+        <span>Linux Bash</span>
+        <span>Git, Mercurial, CVS</span>
+        <span>VSCode</span>
+      </section>
+
+      <section id="services" class="section section-light" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Miben tudok segíteni</p>
+          <h2 id="services-title">Adatbázis-fejlesztés állami / üzleti rendszerek mögött.</h2>
+          <p>
+            A fókuszom a stabil adatbázis-réteg: jól karbantartható PL/SQL, átlátható sémák,
+            hatékony SQL lekérdezések és megbízható adatszolgáltatások kialakítása..
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-index">01</span>
+            <h3>PL/SQL fejlesztés</h3>
+            <p>Package, Function, Trigger, Cursor, Exception Handling, Scheduler Jobs, Bulk Collect, FORALL, Collections</p>
+          </article>
+          <article class="service-card">
+            <span class="card-index">04</span>
+            <h3>SQL Performance & Data Processing</h3>
+            <p>JOINs, CTEs, Window / Analytic Functions, Explain Plan, Materialized View, Table Partitioning.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-index">02</span>
+            <h3>Séma-tervezés és adatbázis támogatás</h3>
+            <p>Meglévő adatbázisok támogatása, új sémák kialakítása, adatbázis-változások kezelése és üzemeltetési folyamatok támogatása.</p>
+          </article>
+          <article class="service-card">
+            <span class="card-index">03</span>
+            <h3>Adatszolgáltatás és riporting</h3>
+            <p>Egyedi SQL lekérdezések, adatjavítások, riportálási igények és adattárházi adatkiszolgálás támogatása.</p>
+          </article>
+        </div>
+        
+      </section>
+
+      <section class="section section-skills" aria-labelledby="skills-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Technológiai stack</p>
+          <h2 id="skills-title">Erős SQL alapok, adatplatform szemlélet.</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-tabs" role="tablist" aria-label="Kompetencia kategóriák">
+            <button class="skill-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-db" id="tab-db" data-tab="db">
+              Adatbázis
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-tools" id="tab-tools" data-tab="tools">
+              Eszközök
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-ds" id="tab-ds" data-tab="ds">
+              Data Science - érdkelődés
+            </button>
+          </div>
+
+          <div class="skill-panels">
+            <div class="skill-panel is-active" role="tabpanel" id="panel-db" aria-labelledby="tab-db">
+              <div class="chip-list">
+                <span>PL/SQL</span>
+                <span>SQL</span>
+                <span>Oracle 10g-11g</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Materialized view</span>
+                <span>Table partitioning</span>
+                <span>Bulk collect</span>
+                <span>Window functions</span>
+              </div>
+            </div>
+            <div class="skill-panel" role="tabpanel" id="panel-tools" aria-labelledby="tab-tools" hidden>
+              <div class="chip-list">
+                <span>Oracle SQL Developer</span>
+                <span>SQL*Plus</span>
+                <span>Visual Studio Code</span>
+                <span>Toad for Oracle</span>
+                <span>Toad Data Modeler</span>
+                <span>Enterprise Architect</span>
+                <span>Linux Bash scripting</span>
+                <span>Git</span>
+                <span>Mercurial</span>
+              </div>
+            </div>
+            <div class="skill-panel" role="tabpanel" id="panel-ds" aria-labelledby="tab-ds" hidden>
+              <div class="chip-list">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Jupyter Notebook</span>
+                <span>Adattisztítás</span>
+                <span>Vizualizáció</span>
+                <span>Scikit-learn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-light" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Szakmai út</p>
+          <h2 id="experience-title">Fejlesztői fókusz, üzemeltetési szemlélettel.</h2>
+          <p>
+            Az adatbázis-fejlesztői tapasztalatot üzemeltetési, monitoring és infrastruktúra 
+            szemlélet egészíti ki, így a megoldások nemcsak fejlesztői, hanem működési oldalról is átgondoltak.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2009 - 2019</div>
+            <div>
+              <h3>Adatbázis fejlesztő | Vanio Kft. / IdomSoft Zrt.</h3>
+              <p>Oracle adatbázisok fejlesztése és támogatása, PL/SQL alapú üzleti logikák implementálása, 
+                adatszolgáltatási és riporting folyamatok fejlesztése, valamint adatbázis-sémák tervezése és refaktorálása.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2008 - 2009</div>
+            <div>
+              <h3>Rendszerüzemeltető | I-Logic Ltd.</h3>
+              <p>Alkalmazás- és szervermonitoring, hardware support, hálózatépítés L1-L3 rétegekben.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2006 - 2008</div>
+            <div>
+              <h3>Rendszeradminisztrátor | Pro Patria Electronics Ltd.</h3>
+              <p>IT infrastruktúra, hálózat, e-mail és webszerver üzemeltetés.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projektminta</p>
+          <h2 id="projects-title">Kritikus rendszerek adatbázis-rétegében szerzett tapasztalat (10 év).</h2>
+          <p>
+            Több nyilvántartási, ügyfélregisztrációs rendszer adatbázis-fejlesztési és 
+            üzemeltetési támogatásában szereztem tapasztalatot.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>IGFB és IDR</h3>
+            <p>Adatbázis séma support, PL/SQL üzleti logika, adatjavítások, egyedi adatszolgáltatások, code refactor.</p>
+          </article>
+          <article class="project-card">
+            <h3>KSZNY, SZNYR, STATVIR</h3>
+            <p>Adatszolgáltatás-fejlesztés, átírási feladatok és adattárházi adatbázis-réteg fejlesztés.</p>
+          </article>
+          <article class="project-card">
+            <h3>SIS2</h3>
+            <p>Adatbázis sémák supportja és partícionált napló séma kialakítása.</p>
+          </article>
+          <article class="project-card">
+            <h3>VSZNY, RKTA, GYEK, ÖNY, KUNY</h3>
+            <p>Sématervezés, telepítés, support, eseti adatjavítások és adatbázis-réteg fejlesztés.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-learning" aria-labelledby="learning-title">
+        <div class="learning-copy">
+          <p class="eyebrow">Következő irány</p>
+          <h2 id="learning-title">Data Science tanulás SQL-alapokról indulva.</h2>
+          <p>
+            Aktívan érdeklődöm a Data Scientist terület iránt. Jelenleg Python, Pandas és Matplotlib
+            eszközökkel tanulok adatelemzést és vizualizációt, a GitHubon pedig friss Jupyter Notebook
+            projektként épül a pilot Speech Word Frequency Analyzer.
+          </p>
+        </div>
+        <div class="learning-visual" aria-label="Data Science tanulási fókusz">
+          <div class="bar-row">
+            <span>Python</span>
+            <strong style="--value: 28%"></strong>
+          </div>
+          <div class="bar-row">
+            <span>Pandas</span>
+            <strong style="--value: 18%"></strong>
+          </div>
+          <div class="bar-row">
+            <span>Matplotlib</span>
+            <strong style="--value: 32%"></strong>
+          </div>
+          <div class="bar-row">
+            <span>SQL szemlélet</span>
+            <strong style="--value: 92%"></strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Kapcsolat</p>
+          <h2 id="contact-title">Nyitott vagyok adatbázis-fejlesztői és data platform lehetőségekre.</h2>
+          <p>
+            Oracle PL/SQL, SQL és adattárházi / riporting rendszerek fejlesztésében keresek új szakmai kihívásokat. 
+            Szakmai angol dokumentáció olvasásában magabiztos vagyok.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:budacsik@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+            budacsik@gmail.com
+          </a>
+          <a class="button secondary" href="tel:+36204321662">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path>
+            </svg>
+            +36 20 432 1662
+          </a>
+          <a class="button secondary" href="https://www.linkedin.com/in/budacsikattila" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <path d="M2 9h4v12H2z"></path>
+              <path d="M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="button secondary" href="https://github.com/budacsika" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.6a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.8 12.8 0 0 0-6.7 0C6.7.4 5.6.7 5.6.7a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 4.1 8c0 5.1 3.1 6.3 6.1 6.6a3.4 3.4 0 0 0-.9 2.6V22"></path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year">2026</span> Budácsik Attila | Designed and developed with Codex AI</span>
+      <a href="#top">Vissza az elejére</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
