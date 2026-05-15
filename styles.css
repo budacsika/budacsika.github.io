@@ -547,6 +547,98 @@ h3 {
   font-weight: 690;
 }
 
+.section-material {
+  background: rgba(255, 255, 255, 0.62);
+  border-top: 1px solid rgba(17, 20, 24, 0.08);
+}
+
+.material-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 32px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid rgba(17, 20, 24, 0.1);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 14px 36px rgba(17, 20, 24, 0.08);
+}
+
+.material-copy p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.material-copy .button {
+  margin-top: 24px;
+}
+
+.material-preview {
+  min-height: 250px;
+  padding: 22px;
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(21, 25, 30, 0.92), rgba(7, 95, 90, 0.9)),
+    var(--code);
+  color: #d7eee9;
+  position: relative;
+  overflow: hidden;
+}
+
+.material-preview::after {
+  position: absolute;
+  right: -44px;
+  bottom: -44px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgba(112, 208, 200, 0.34);
+  border-radius: 50%;
+  content: "";
+}
+
+.material-year {
+  display: inline-grid;
+  min-width: 62px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(112, 208, 200, 0.34);
+  border-radius: 8px;
+  color: #70d0c8;
+  font-weight: 830;
+}
+
+.slide-lines {
+  display: grid;
+  gap: 10px;
+  margin: 42px 0 22px;
+}
+
+.slide-lines span {
+  display: block;
+  height: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.slide-lines span:nth-child(1) {
+  width: 76%;
+}
+
+.slide-lines span:nth-child(2) {
+  width: 58%;
+}
+
+.slide-lines span:nth-child(3) {
+  width: 84%;
+}
+
+.material-preview code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
 .timeline {
   display: grid;
   gap: 18px;
@@ -724,8 +816,13 @@ h3 {
   }
 
   .contact-section,
-  .section-learning {
+  .section-learning,
+  .material-card {
     grid-template-columns: 1fr;
+  }
+
+  .material-preview {
+    max-width: 420px;
   }
 }
 
