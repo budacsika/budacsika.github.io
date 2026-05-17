@@ -639,6 +639,63 @@ h3 {
   line-height: 1.7;
 }
 
+.practice-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 20px 22px;
+  border: 1px solid rgba(17, 20, 24, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+  color: inherit;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.practice-card:hover,
+.practice-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(10, 127, 120, 0.34);
+  box-shadow: 0 14px 34px rgba(17, 20, 24, 0.08);
+  outline: none;
+}
+
+.practice-kicker {
+  color: var(--coral);
+  font-size: 0.82rem;
+  font-weight: 830;
+}
+
+.practice-card h3 {
+  margin-top: 4px;
+  font-size: 1.1rem;
+}
+
+.practice-card p {
+  max-width: 760px;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.practice-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 270px;
+}
+
+.practice-tags span {
+  padding: 8px 10px;
+  border: 1px solid rgba(10, 127, 120, 0.18);
+  border-radius: 8px;
+  background: rgba(237, 247, 243, 0.88);
+  color: var(--teal-dark);
+  font-size: 0.84rem;
+  font-weight: 760;
+}
+
 .timeline {
   display: grid;
   gap: 18px;
@@ -817,12 +874,18 @@ h3 {
 
   .contact-section,
   .section-learning,
-  .material-card {
+  .material-card,
+  .practice-card {
     grid-template-columns: 1fr;
   }
 
   .material-preview {
     max-width: 420px;
+  }
+
+  .practice-tags {
+    justify-content: flex-start;
+    min-width: 0;
   }
 }
 
