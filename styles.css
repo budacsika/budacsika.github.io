@@ -431,6 +431,47 @@ h3 {
   font-weight: 690;
 }
 
+.section-target {
+  padding-top: 0;
+}
+
+.target-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid rgba(10, 127, 120, 0.18);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(237, 247, 243, 0.82)),
+    var(--surface);
+  box-shadow: 0 16px 40px rgba(17, 20, 24, 0.08);
+}
+
+.target-panel p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.target-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  justify-content: flex-end;
+}
+
+.target-tags span {
+  padding: 9px 11px;
+  border: 1px solid rgba(10, 127, 120, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--teal-dark);
+  font-weight: 760;
+}
+
 .section {
   padding: 82px 5vw;
 }
@@ -479,8 +520,44 @@ h3 {
 
 .service-card p,
 .project-card p,
-.timeline-item p {
+.timeline-item p,
+.workstyle-card p {
   margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.section-results {
+  background: rgba(255, 255, 255, 0.62);
+  border-top: 1px solid rgba(17, 20, 24, 0.08);
+}
+
+.results-grid,
+.workstyle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.result-card,
+.workstyle-card {
+  min-height: 178px;
+  padding: 22px;
+  border: 1px solid rgba(17, 20, 24, 0.1);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(17, 20, 24, 0.06);
+}
+
+.result-card strong {
+  display: block;
+  color: var(--teal-dark);
+  font-size: 1.62rem;
+  line-height: 1.05;
+}
+
+.result-card span {
+  display: block;
+  margin-top: 12px;
   color: var(--muted);
 }
 
@@ -768,6 +845,21 @@ h3 {
   background: linear-gradient(90deg, #70d0c8 var(--value), rgba(255, 255, 255, 0.14) var(--value));
 }
 
+.section-workstyle {
+  background: rgba(255, 255, 255, 0.62);
+  border-top: 1px solid rgba(17, 20, 24, 0.08);
+}
+
+.workstyle-card span {
+  color: var(--coral);
+  font-size: 0.82rem;
+  font-weight: 830;
+}
+
+.workstyle-card h3 {
+  margin-top: 34px;
+}
+
 /* HOBBIES SECTION START: személyes blokk, egyben törölhető */
 .section-hobbies {
   background:
@@ -872,11 +964,21 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .target-panel,
   .contact-section,
   .section-learning,
   .material-card,
   .practice-card {
     grid-template-columns: 1fr;
+  }
+
+  .target-tags {
+    justify-content: flex-start;
+  }
+
+  .results-grid,
+  .workstyle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .material-preview {
@@ -928,6 +1030,8 @@ h3 {
   .hero-stats,
   .service-grid,
   .project-grid,
+  .results-grid,
+  .workstyle-grid,
   .hobby-card-grid,
   .skills-layout {
     grid-template-columns: 1fr;
